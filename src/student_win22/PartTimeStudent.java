@@ -11,7 +11,11 @@ package student_win22;
  */
 public class PartTimeStudent extends Student{
     private int numCourses;
-
+    
+    public PartTimeStudent(String studId, String name , int numCourses){
+        super(studId,name);
+        this.numCourses =numCourses;
+    }
     public int getNumCourses() {
         return numCourses;
     }
